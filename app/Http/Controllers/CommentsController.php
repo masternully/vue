@@ -40,7 +40,7 @@ class CommentsController extends Controller
         $comment->body = $request->body;
         $comment->save();
 
-        return redirect()->route('comments.index');
+        return $comment;
     }
 
     /**

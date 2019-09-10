@@ -46,6 +46,7 @@
                     author: this.comment.author,
                     body: this.comment.body
                 }
+
                 axios.post('/vue/public/comments', params)
                     .then(res => {
                         this.comments.push(res.data);
